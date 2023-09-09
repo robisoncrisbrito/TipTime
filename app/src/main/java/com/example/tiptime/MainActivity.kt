@@ -20,6 +20,8 @@ class MainActivity : AppCompatActivity() {
 
         setContentView(binding.root)
 
+        binding.tipResult.text = getString(R.string.tip_amount_20_00,  "" )
+
     }
 
     fun calculateTip(view: View) {

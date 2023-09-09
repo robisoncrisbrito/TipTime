@@ -39,11 +39,11 @@
         android:id="@+id/icon_service_question"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/service_question"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/service_question"
-        app:layout_constraintBottom_toBottomOf="@+id/service_question"
-        app:srcCompat="@drawable/ic_service_foreground"
-        android:importantForAccessibility="no" />
+        app:srcCompat="@drawable/ic_service_foreground" />
 
     <TextView
         android:id="@+id/service_question"
@@ -86,11 +86,11 @@
         android:id="@+id/icon_round_up"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:importantForAccessibility="no"
         app:layout_constraintBottom_toBottomOf="@+id/round_up_switch"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/round_up_switch"
-        app:srcCompat="@drawable/ic_round_up_foreground"
-        android:importantForAccessibility="no" />
+        app:srcCompat="@drawable/ic_round_up_foreground" />
 
     <Switch
         android:id="@+id/round_up_switch"
@@ -107,6 +107,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:onClick="calculateTip"
         android:text="@string/calculate"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/round_up_switch"
